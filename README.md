@@ -10,4 +10,8 @@ If that URL 404s, a repo owner must enable Pages at
 https://github.com/AgentLab-dev/laabol-web/settings/pages
 — Source = Deploy from a branch, Branch = `main`, folder = `/` (root).
 
-Source: https://github.com/AgentLab-dev/LaaBol
+This copy is the Vite `dist` of [AgentLab-dev/LaaBol](https://github.com/AgentLab-dev/LaaBol) `main` (PR #3 playtest):
+
+- HUD: You table → pouch → Rival table
+- Rival commits to one teal pin and fills its table
+- Table order: 2, 4, 3, 6, 5, 10
