@@ -12,7 +12,7 @@
     <title>LaaBol — Number Hunt</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     
-    <link rel="stylesheet" crossorigin href="./assets/index-8WPXcx8f.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-CqZxaoTB.css">
   </head>
   <body>
     <div id="app">
@@ -38,10 +38,13 @@
             <div id="stamp-row" class="stamp-row"></div>
           </div>
           <p id="hint" class="hint" hidden></p>
-          <div id="tables" class="tables"></div>
-          <div class="pouch-wrap">
-            <div class="pouch-label">Pouch</div>
-            <div id="pouch" class="pouch"></div>
+          <div id="hunt-boards" class="hunt-boards">
+            <div id="player-table" class="board-slot"></div>
+            <div class="pouch-wrap">
+              <div class="pouch-label" id="pouch-label">Pouch</div>
+              <div id="pouch" class="pouch"></div>
+            </div>
+            <div id="rival-table" class="board-slot" hidden></div>
           </div>
         </aside>
       </section>
@@ -92,7 +95,6 @@
         </div>
       </section>
     </div>
-    <!-- Smoke: game script is after id="play-btn"; se() binds Play only after the button exists. -->
-  <script type="module" crossorigin src="./assets/index-CiBNWwbQ.js"></script>
+  <script type="module" crossorigin src="./assets/index-D5gucBgS.js"></script>
 </body>
 </html>
