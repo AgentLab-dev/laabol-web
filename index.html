@@ -10,73 +10,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="theme-color" content="#1f8a70" />
     <title>LaaBol — Number Hunt</title>
-    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <script type="module" crossorigin src="./assets/index-DL79qebD.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BnMWkFvk.css">
+    <link rel="icon" href="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%0A%20%20%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%231f8a70%22%2F%3E%0A%20%20%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2218%22%20fill%3D%22%23ffd166%22%2F%3E%0A%20%20%3Ctext%20x%3D%2232%22%20y%3D%2240%22%20text-anchor%3D%22middle%22%20font-size%3D%2222%22%20font-family%3D%22Trebuchet%20MS%2C%20sans-serif%22%20font-weight%3D%22700%22%20fill%3D%22%231d3557%22%3E2%3C%2Ftext%3E%0A%3C%2Fsvg%3E%0A" type="image/svg+xml" />
+    <script type="module">PLACEHOLDER_SEE_FILE</script>
   </head>
-  <body>
-    <div id="app">
-      <section id="title-screen" class="screen">
-        <h1 class="logo">LaaBol</h1>
-        <p class="tagline">Hunt the numbers on Toy Island</p>
-        <p class="subtag">One tablet · No timer · No accounts</p>
-        <button id="play-btn" class="big-btn play">Play</button>
-        <button id="title-closet-btn" class="big-btn ghost" hidden>Closet</button>
-        <p id="progress-line" class="progress-line"></p>
-      </section>
-      <section id="game-screen" class="screen" hidden>
-        <div id="world-wrap">
-          <canvas id="world" width="1000" height="720"></canvas>
-          <div id="speech" hidden></div>
-          <div id="toast" hidden></div>
-        </div>
-        <aside id="hud">
-          <div class="stamp-block">
-            <div class="stamp-label">Stamps</div>
-            <div id="stamp-row" class="stamp-row"></div>
-          </div>
-          <div id="tables" class="tables"></div>
-          <p id="hint" class="hint" hidden></p>
-          <div class="pouch-wrap">
-            <div class="pouch-label">Pouch</div>
-            <div id="pouch" class="pouch"></div>
-          </div>
-        </aside>
-      </section>
-      <section id="stamp-screen" class="screen overlay" hidden>
-        <div class="card celebrate">
-          <div id="wax-stamp" class="wax">★</div>
-          <h2 id="stamp-title">Table stamped!</h2>
-          <p id="stamp-unlock"></p>
-          <div class="btn-row">
-            <button id="stamp-closet-btn" class="big-btn ghost">Closet</button>
-            <button id="next-hunt-btn" class="big-btn play">Next hunt</button>
-          </div>
-        </div>
-      </section>
-      <section id="rival-result-screen" class="screen overlay" hidden>
-        <div class="card celebrate">
-          <h2 id="rival-result-title">Race over</h2>
-          <p id="rival-result-body"></p>
-          <div class="btn-row">
-            <button id="result-closet-btn" class="big-btn ghost">Closet</button>
-            <button id="rematch-btn" class="big-btn play">Try again</button>
-          </div>
-        </div>
-      </section>
-      <section id="closet-screen" class="screen overlay" hidden>
-        <div class="card closet-card">
-          <h2>Closet</h2>
-          <p class="closet-note">Looks only — same speed, same hunt.</p>
-          <canvas id="closet-preview" width="280" height="320"></canvas>
-          <div class="closet-slots">
-            <div><h3>Hat</h3><div id="hat-choices" class="choice-row"></div></div>
-            <div><h3>Top</h3><div id="top-choices" class="choice-row"></div></div>
-            <div><h3>Shoes</h3><div id="shoe-choices" class="choice-row"></div></div>
-          </div>
-          <button id="closet-done-btn" class="big-btn play">Looks great!</button>
-        </div>
-      </section>
-    </div>
-  </body>
 </html>
